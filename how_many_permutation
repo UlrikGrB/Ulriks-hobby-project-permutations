@@ -1,0 +1,15 @@
+how_many<-function(v){                  # R programming. This function is part of a larger program called permutations # 
+  w<-0                                  # This function assumes only matrices or vectors as valid inputs #                                          
+  if(is.matrix(v)){                     # If supplied with a matrix, this function will tell how many replicas that #
+    for(i in 1:nrow(v)){                # vector will produce. E.x c(1,0,0) is intended to produce c(1,1,0) and c(1,0,1) in that order #
+      a<-v[i,]                          # So this adds 2 to w #
+      times<-ncol(v)-max(which(a==1))
+      w<-times+w
+    }
+    return(w)
+  }else{
+    w<-(length(v)-max(which(v==1)))
+    return(w)
+  }
+  
+}
