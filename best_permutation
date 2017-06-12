@@ -1,7 +1,7 @@
-best<-function(y){                                    # Assuming only numeric matrices are valid inputs. This function returns a 
-  matrow<-how_many(y)                                 #  
-  matcol<-ncol(y)
-  return_matrix<-matrix(NA,matrow,matcol)
+best<-function(y){                                    # Assuming only numeric matrices are valid inputs. This function returns a #
+  matrow<-how_many(y)                                 # a new matrix that consists of vectors produced by the vectors in the original #
+  matcol<-ncol(y)                                     # matrix. This new matrix can again be input in best again and so on, untill #
+  return_matrix<-matrix(NA,matrow,matcol)             # all possible permutations are stored. This is what the function "final" will do #
   count<-1
   
   for(i in 1:nrow(y)){
