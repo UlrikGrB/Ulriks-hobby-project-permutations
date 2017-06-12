@@ -1,0 +1,15 @@
+final<-function(n){               # This is the final product. The user enter a number n>=2, and the programme will store all #
+  y<-diag(n)                      # possible 2-cell permutations of 1 and 0 as an aggregate matrix #
+  a<-y                            
+  s<-best(y)
+  m<-rbind(s,y)
+  for(i in 1:(n-1)){
+    s<-best(s)
+    w<-rbind(m,s)
+    m<-w
+    
+    
+  }
+  return(rbind(m,rep(0,times=n)))
+  
+}
