@@ -1,0 +1,23 @@
+best<-function(y){                                    # Assuming only numeric matrices are valid inputs. This function returns a 
+  matrow<-how_many(y)                                 #  
+  matcol<-ncol(y)
+  return_matrix<-matrix(NA,matrow,matcol)
+  count<-1
+  
+  for(i in 1:nrow(y)){
+    if(y[i,][length(y[i,])]==1){
+      next
+    }
+    a<-y[i,]
+    b<-a
+    for(k in 1:how_many(a)){
+      d<-max(which(a==1)+k)
+      a[d]<-1
+      return_matrix[count,]<-a
+      a<-b
+      count<-count+1
+    }
+  }
+    
+  return(return_matrix)  
+}
