@@ -1,5 +1,5 @@
 # The Permutation Game #
 
 The purpose of this project is to produce all unique n-cells of 1 and 0. The program _final does this, building upon the 
-functions _best, which is in turn bulit on the function _how_many. I think theres many ways to produce all n-cells of 1 and 0, and my programme is probably not the fastest, but neverthless, it was an extremely fun. This was my first "big" project since after reading the Book of R by Tilman Davis, which inspired me to start programming.
+functions _best, which is in turn built on the function _how_many. I think theres many ways to produce all n-cells of 1 and 0, and my programme is probably not the fastest, but neverthless, it was an extremely fun. This was my first "big" project since after reading the Book of R by Tilman Davis, which inspired me to start programming.
 In the future I will try to tackle the problem with more efficient code, and find the one that is the fastest and neatiest.
